@@ -36,7 +36,7 @@ class SupportedImageFormats(Enum):
 
 def main(
         script: str = typer.Option(..., help="File containing the JS code."),
-        extension: SupportedImageFormats = typer.Option(SupportedImageFormats.jpg, help="Output image format."),
+        extension: SupportedImageFormats = typer.Option('jpg', help="Output image format."),
         image: str = typer.Option(None, help="Image to use (Not supported with every extension)."),
         output: str = typer.Option(..., help="Output file.")
 ):
